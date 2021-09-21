@@ -1,7 +1,6 @@
 class DockingStation
   def release_bike
-    released_bike = Bike.new
-    p "Bike released"
+    return Bike.new
   end
 
   def get
@@ -11,8 +10,6 @@ class DockingStation
 end
 
 class Bike
-
-
   def working?
     true
   end
