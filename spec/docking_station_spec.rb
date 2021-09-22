@@ -7,6 +7,18 @@ describe DockingStation do
   it 'releases a working bike' do
     expect(DockingStation.new.release_bike).to be_working
   end
+
+  it "returns docked bikes" do 
+    bike = Bike.new
+    subject.dock(bike)
+    expect(subject.bike).to eq bike
+  end
+
+  it { is_expected.to respond_to(:bike)}
+
+  # it "raises an error" do
+  #   expect {subject.bike_avaible?}.to raise_error(NoMethodError)
+  # end
 end
 
 
