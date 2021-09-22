@@ -17,10 +17,6 @@ class DockingStation
     @bike
   end
 
-  def release_bike
-    
-  end
-
   # def bike
   #   @bike
   # end 
